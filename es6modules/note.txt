@@ -1,4 +1,0 @@
-start  http server
-python -m http.server 8082
-you only can use edge access localhost:8082/main.html
-chrome don't support this.
