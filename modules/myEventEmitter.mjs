@@ -1,5 +1,5 @@
 
-import {EventEmitter} from "../common/EventEmitter.mjs"
+import {EventEmitter} from "../common/eventEmitter.mjs"
 
 class MyEventEmiter extends EventEmitter
 {

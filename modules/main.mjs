@@ -1,4 +1,5 @@
 
+import { MyAjaxRequest,ajaxRequest, methodTypes } from './MyAjaxRequest.mjs'
 import {obsApi,test}  from './module.mjs'
 import {MyEventEmiter}  from './myEventEmitter.mjs'
 class Main
@@ -6,7 +7,10 @@ class Main
     constructor(){        
     }    
     Run(){        
-        this.testMyEventEmiter()
+        this.testMyAjaxRequest()
+    }
+    testMyAjaxRequest(){
+        MyAjaxRequest();
     }
     testMyEventEmiter(){
         var lMyEventEmiter = new MyEventEmiter()
