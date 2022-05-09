@@ -2,12 +2,21 @@
 import { MyAjaxRequest,ajaxRequest, methodTypes } from './MyAjaxRequest.mjs'
 import {obsApi,test}  from './module.mjs'
 import {MyEventEmiter}  from './myEventEmitter.mjs'
+import {TestMySymbol}  from './MySymbol.mjs'
+import {testProxy}  from './MyProxy.mjs'
+
 class Main
 {
     constructor(){        
     }    
     Run(){        
-        this.testMyAjaxRequest()
+        this.TestMyProxy()
+    }
+    TestMyProxy(){
+        testProxy();
+    }
+    TestMySymbol(){
+        TestMySymbol()
     }
     testMyAjaxRequest(){
         MyAjaxRequest();
