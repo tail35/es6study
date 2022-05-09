@@ -1,6 +1,10 @@
 
 
 ------------------------
+es6 manual
+https://262.ecma-international.org/6.0/
+
+
 阮一峰入门
 https://es6.ruanyifeng.com/#docs/proxy
 https://kangax.github.io/compat-table/es6/
