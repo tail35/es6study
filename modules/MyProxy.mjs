@@ -52,9 +52,52 @@ const Myobj2=
       name:"111"
   }
 
+var lmyobj3={
+  wo:()=>{console.log('111')}
+}
+
+//proxy for observe
+var i=0;
+function mycall(){
+  console.log("mycall:",i++);
+}
+function mycall2(){
+  console.log("mycall2:",i++);
+}
+var obj={}
+const queuedObservers = new Set();
+
+const observe = fn => queuedObservers.add(fn);
+const observable = obj => new Proxy(obj, {set});
+
+function set(target, key, value, receiver) {
+  const result = Reflect.set(target, key, value, receiver);
+  console.log(value)
+  queuedObservers.forEach(observer => observer());//fucntion (observer){ return observer()}
+  return result;
+}
+
   function testProxy()
-  {     
-    Reflect.apply(MyObj,Myobj2,["kk"])
+  {  
+
+
+    return 
+    //--
+    // observe(mycall)
+    // observe(mycall2)
+    // var hh =  observable(obj)
+    // hh.v1 = 1
+    //--
+
+    //console.log(obj)
+    
+    //console.log(observe)
+    //console.log(observable)
+
+    //console.log( Reflect.ownKeys(lmyobj3) )
+    //Reflect.defineProperty(lmyobj3,"k",{value:"11"}) 
+    //console.log(lmyobj3)
+    //Reflect.apply(MyObj,Myobj2,["kk"])
 
     //  var res1 = Reflect.construct(MyObj,["name"])
     //  console.log( Reflect.getPrototypeOf(res1) );

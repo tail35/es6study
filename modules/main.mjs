@@ -4,14 +4,26 @@ import {obsApi,test}  from './module.mjs'
 import {MyEventEmiter}  from './myEventEmitter.mjs'
 import {TestMySymbol}  from './MySymbol.mjs'
 import {testProxy}  from './MyProxy.mjs'
+import {TestMyPromise}  from './MyPromise.mjs'
+import {testOther}  from './other.mjs'
 
 class Main
 {
     constructor(){        
-    }    
-    Run(){        
-        this.TestMyProxy()
     }
+
+    Run(){
+        this.TestOther()
+    }
+    TestOther(){
+        testOther();
+    }
+
+    TestPromise()
+    {
+        TestMyPromise()
+    }
+
     TestMyProxy(){
         testProxy();
     }

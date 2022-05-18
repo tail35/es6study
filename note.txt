@@ -2,6 +2,10 @@
 
 ------------------------
 es6 manual
+good base 
+https://www.runoob.com/w3cnote/es6-tutorial.html   //using
+https://www.runoob.com/css/css-tutorial.html  //using
+
 https://262.ecma-international.org/6.0/
 
 
@@ -11,7 +15,8 @@ https://kangax.github.io/compat-table/es6/
 ------------------------
 start  http server
 python -m http.server 8082
-you only can use edge access localhost:8082/main.html
+you only can use edge access 
+localhost:8082/main.html
 chrome don't support this.
 
 or 
@@ -19,8 +24,4 @@ or
 npm install http-server -g
 http-server -help
 http-server -p 8082
-
-
-
-
 
