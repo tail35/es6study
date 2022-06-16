@@ -1,4 +1,7 @@
 
+npm install -g sass
+sass --version
+sass scss/main.scss scss/main.css
 
 ------------------------
 es6 manual

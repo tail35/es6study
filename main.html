@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>		
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="scss/main.css">
 	<script src="./common/jquery.min.js"></script>
 	<script id='tmpl' type="module" >
 		import {Main}  from './modules/main.mjs'
@@ -11,14 +13,22 @@
 	
 	</head>
 	<body>
-		<h1>very good!<h>
+		<!-- begin 简单的分页 -->
+		<h2>简单的分页</h2>
+		<ul class="pagination">
+		  <li><a href="#">«</a></li>
+		  <li><a href="#">1</a></li>
+		  <li><a class="active" href="#">2</a></li>
+		  <li><a href="#">3</a></li>
+		  <li><a href="#">4</a></li>
+		  <li><a href="#">5</a></li>
+		  <li><a href="#">6</a></li>
+		  <li><a href="#">7</a></li>
+		  <li><a href="#">»</a></li>
+		</ul>
+		<!-- end 简单的分页 -->
+		<!-- <h1>very good!<h> -->
 	</body>
-	<style>
-		h1{
-			color: red;
-			voice-family:male;
-			richness:80;
-			cue-before:url("beep.au")
-		}
+	<style >
 	</style>
 </html>
