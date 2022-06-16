@@ -6,14 +6,19 @@ import {TestMySymbol}  from './MySymbol.mjs'
 import {testProxy}  from './MyProxy.mjs'
 import {TestMyPromise}  from './MyPromise.mjs'
 import {testOther}  from './other.mjs'
+import {testjAjax}  from './jajax.mjs'
 
 class Main
 {
-    constructor(){        
+    constructor(){
     }
 
     Run(){
-        this.TestOther()
+        this.TestjAjax()
+    }
+    TestjAjax()
+    {
+        testjAjax()
     }
     TestOther(){
         testOther();
